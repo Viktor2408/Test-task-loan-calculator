@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <title>IDPOWERS</title>
+        
+    </head>
+        <body>
+            <header>
+                <h1>Калькулятор займа под ПТС</h1>
+                <div class="calc">
+                    <div class="calc-left-block">
+                        <div class="flex">
+                            <h3>Тип платежа</h3>
+                            <div class="type-pay">
+                                <a href="#" data-index="0"  class="button-br1  active"> 
+                                    Дифференцированный                         
+                                </a>
+                                <a href="#" data-index="1"  class="button-br2" > 
+                                    Аннуитетный                          
+                                </a>
+                            </div>
+                            
+                        </div>
+                        <div class="box">
+                            <div class="flex">
+                                <h3>Сумма займа</h3>
+                                <div class="value" ><span id="current-sum" style="color: #000;">138100</span> ₽</div>
+                            </div>
+                            <div class="slider">
+                                <div class="progress" style="width: 13.81%;"></div>
+                                <input type="range" min="15000" max="1000000" value="138100" id="summ">
+                            </div>
+                            <div class="flex">
+                                <span>от 15 000 ₽</span> <span>до 1 000 000 ₽</span>
+                            </div>
+                        </div> 
+                        <div class="box">
+                            <div class="flex">
+                                <h3>Срок займа</h3>
+                                <div class="value" ><span id="current-month" style="color: #000;">8</span>  месяцев</div>
+                            </div>
+                            <div class="slider">
+                                <div class="progress" style="width: 60%;"></div>
+                                <input type="range" min="2" max="12" value="8"  class="range" id="monts" >
+                            </div>
+                            <div class="flex">
+                                <span>от 2 месяца</span> <span>до 12 месяцев</span>
+                            </div>
+                        </div> 
+                        <p>Условия выдачи займа могут отличаться, исходя из анализа документов и состояния вашего автомобиля</p>
+                        
+                    </div>
+                    <div class="calc-right-block">
+                        <span>Ставка</span>
+                        <div class="rate">
+                            <h2>2.7%</h2>
+                        </div>
+                        <span>Ежемесячный платеж</span>
+                        <div class="pay">
+                            <h2>3729 ₽</h2> 
+                        </div>
+                        <a class="button popup-open" href="#">
+                            Подать заявку
+                        </a>
+                        <p>Расчет займа предварительный</p>
+                    </div>
+                </div>
+            </header>
+
+
+               
+
+            <script src="js/jquery.js"></script>
+            <script src="js/sсript.js"></script>
+
+
+        </body>
+</html>
